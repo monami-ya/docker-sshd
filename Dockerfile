@@ -1,4 +1,6 @@
-FROM alpine:3.20
+FROM alpine:edge
+
+MAINTAINER Andrew Cutler <andrew@panubo.com>
 
 RUN apk update && \
     apk add --no-cache bash git openssh rsync augeas shadow rssh && \
